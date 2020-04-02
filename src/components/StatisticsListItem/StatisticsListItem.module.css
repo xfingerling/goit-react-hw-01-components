@@ -1,0 +1,46 @@
+.listItem {
+  background-color: rgb(173, 173, 173);
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(167, 167, 167);
+}
+
+.listItem:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.listItem:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.colorOne {
+  composes: listItem;
+  background-color: rgb(255, 34, 34);
+}
+
+.colorTwo {
+  composes: listItem;
+  background-color: rgb(36, 255, 102);
+}
+
+.colorThree {
+  composes: listItem;
+  background-color: rgb(159, 42, 255);
+}
+
+.colorFour {
+  composes: listItem;
+  background-color: rgb(31, 192, 255);
+}
+
+.colorFive {
+  composes: listItem;
+  background-color: rgb(255, 27, 141);
+}
+
+.label {
+  padding-bottom: 10px;
+}

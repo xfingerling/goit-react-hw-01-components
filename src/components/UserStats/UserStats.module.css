@@ -1,0 +1,29 @@
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.listItem:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.listItem:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.label {
+  color: rgb(131, 131, 131);
+}
+
+.quantity {
+  color: rgb(49, 49, 49);
+}
