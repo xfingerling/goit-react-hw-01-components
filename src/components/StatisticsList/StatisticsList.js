@@ -9,7 +9,6 @@ const StatisticsList = ({ stats }) => {
   const listItem = stats.map((el) => (
     <StatisticsListItem key={el.id} statsItem={el} />
   ));
-
   return <ul className={styles.list}>{listItem}</ul>;
 };
 
@@ -18,13 +17,13 @@ StatisticsList.defaultProps = {
 };
 
 StatisticsList.propTypes = {
-  statsItem: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string,
       percentage: PropTypes.number,
     }),
-  ),
+  ).isRequired,
 };
 
 export default StatisticsList;

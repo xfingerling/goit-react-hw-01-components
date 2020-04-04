@@ -10,7 +10,7 @@ const Status = ({ isOnline }) =>
     <span className={styles.offline}></span>
   );
 
-Status.propsTypes = {
+Status.propTypes = {
   isOnline: PropTypes.bool,
 };
 

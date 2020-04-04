@@ -21,11 +21,11 @@ const FriendList = ({ friends }) => {
 };
 
 FriendList.defaultProps = {
-  friend: [],
+  friends: [],
 };
 
 FriendList.propTypes = {
-  friend: PropTypes.arrayOf(
+  friends: PropTypes.arrayOf(
     PropTypes.shape({
       avatar: PropTypes.string,
       name: PropTypes.string,
