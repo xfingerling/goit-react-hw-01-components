@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import "./index.module.css";
+import "./index.css";
 
 // DATA
 import user from "./user.json";
