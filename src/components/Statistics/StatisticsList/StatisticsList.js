@@ -5,15 +5,12 @@ import styles from "./StatisticsList.module.css";
 
 import StatisticsListItem from "../StatisticsListItem/StatisticsListItem";
 
-const StatisticsList = ({ stats }) => {
+const StatisticsList = ({ stats = [] }) => {
   const listItem = stats.map((el) => (
     <StatisticsListItem key={el.id} statsItem={el} />
   ));
-  return <ul className={styles.list}>{listItem}</ul>;
-};
 
-StatisticsList.defaultProps = {
-  stats: [],
+  return <ul className={styles.list}>{listItem}</ul>;
 };
 
 StatisticsList.propTypes = {

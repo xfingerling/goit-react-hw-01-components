@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import styles from "./TransactionHistoryRow.module.css";
 
-const TransactionHistoryRow = ({ items }) => {
-  const { type, amount, currency } = items;
+const TransactionHistoryRow = ({ item }) => {
+  const { type, amount, currency } = item;
 
   return (
     <tr>
@@ -18,7 +18,7 @@ const TransactionHistoryRow = ({ items }) => {
 };
 
 TransactionHistoryRow.propTypes = {
-  items: PropTypes.objectOf(PropTypes.string),
+  item: PropTypes.objectOf(PropTypes.string),
 };
 
 export default TransactionHistoryRow;

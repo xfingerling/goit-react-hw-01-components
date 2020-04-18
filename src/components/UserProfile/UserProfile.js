@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import styles from "./UserProfile.module.css";
 
-import UserDescription from "../UserDescription/UserDescription";
-import UserStats from "../UserStats/UserStats";
+import UserDescription from "./UserDescription/UserDescription";
+import UserStats from "./UserStats/UserStats";
 
 const UserProfile = ({ stats, ...props }) => {
   return (

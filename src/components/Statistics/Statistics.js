@@ -3,21 +3,15 @@ import PropTypes from "prop-types";
 
 import styles from "./Statistics.module.css";
 
-import StatisticsTitle from "../StatisticsTitle/StatisticsTitle";
-import StatisticsList from "../StatisticsList/StatisticsList";
+import StatisticsTitle from "./StatisticsTitle/StatisticsTitle";
+import StatisticsList from "./StatisticsList/StatisticsList";
 
-const Statistics = ({ title, stats }) => {
-  return (
-    <section className={styles.statistics}>
-      <StatisticsTitle title={title} />
-      <StatisticsList stats={stats} />
-    </section>
-  );
-};
-
-Statistics.defaultProps = {
-  stats: [],
-};
+const Statistics = ({ title, stats = [] }) => (
+  <section className={styles.statistics}>
+    <StatisticsTitle title={title} />
+    <StatisticsList stats={stats} />
+  </section>
+);
 
 Statistics.propTypes = {
   title: PropTypes.string,

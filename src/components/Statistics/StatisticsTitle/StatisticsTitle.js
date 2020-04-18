@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import styles from "./StatisticsTitle.module.css";
 
 const StatisticsTitle = ({ title }) =>
-  title.length > 0 && <h2 className={styles.title}>{title}</h2>;
+  !!title.length && <h2 className={styles.title}>{title}</h2>;
 
 StatisticsTitle.defaultProps = {
   title: "",

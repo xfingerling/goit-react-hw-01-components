@@ -8,7 +8,7 @@ import Status from "../Status/Status";
 const FriendListItem = ({ name, avatar, isOnline }) => (
   <li className={styles.listItem}>
     <Status isOnline={isOnline} />
-    <img className={styles.avatar} src={avatar} alt={name} width="48" />
+    <img className={styles.avatar} src={avatar} alt={name} />
     <p>{name}</p>
   </li>
 );

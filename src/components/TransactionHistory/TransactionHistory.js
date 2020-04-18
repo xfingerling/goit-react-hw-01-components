@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 import styles from "./TransactionHistory.module.css";
 
-import TransactionHistoryRow from "../TransactionHistoryRow/TransactionHistoryRow";
+import TransactionHistoryRow from "./TransactionHistoryRow/TransactionHistoryRow";
 
 const TransactionHistory = ({ items }) => {
   const listItems = items.map((el) => (
-    <TransactionHistoryRow key={el.id} items={el} />
+    <TransactionHistoryRow key={el.id} item={el} />
   ));
 
   return (
