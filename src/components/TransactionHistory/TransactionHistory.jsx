@@ -5,7 +5,7 @@ import styles from "./TransactionHistory.module.css";
 
 import TransactionHistoryRow from "./TransactionHistoryRow/TransactionHistoryRow";
 
-const TransactionHistory = ({ items }) => {
+const TransactionHistory = ({ items = [] }) => {
   const listItems = items.map((el) => (
     <TransactionHistoryRow key={el.id} item={el} />
   ));
@@ -23,10 +23,6 @@ const TransactionHistory = ({ items }) => {
       <tbody>{listItems}</tbody>
     </table>
   );
-};
-
-TransactionHistory.defaultProps = {
-  item: [],
 };
 
 TransactionHistory.propTypes = {
