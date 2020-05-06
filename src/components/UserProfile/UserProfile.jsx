@@ -6,14 +6,12 @@ import styles from "./UserProfile.module.css";
 import UserDescription from "./UserDescription/UserDescription";
 import UserStats from "./UserStats/UserStats";
 
-const UserProfile = ({ stats, ...props }) => {
-  return (
-    <div className={styles.profile}>
-      <UserDescription {...props} />
-      <UserStats stats={stats} />
-    </div>
-  );
-};
+const UserProfile = ({ stats, ...props }) => (
+  <div className={styles.profile}>
+    <UserDescription {...props} />
+    <UserStats stats={stats} />
+  </div>
+);
 
 UserProfile.propTypes = {
   avatar: PropTypes.string,
